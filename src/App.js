@@ -9,7 +9,7 @@ import {
     MDBFooter,
     MDBNavLink
 } from "mdbreact";
-import { ReactComponent as Logo } from "./images/logo.png";
+import logo from "./images/logo.png";
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./Routes";
 
@@ -44,7 +44,7 @@ class App extends Component {
                 <div className="flyout">
                     <MDBNavbar color="indigo" dark expand="md" fixed="top" scrolling>
                         <MDBNavbarBrand href="/" className="py-0 font-weight-bold">
-                            <Logo style={{ height: "2.5rem", width: "2.5rem" }} />
+                            <img src={logo} className="mr-3" width="100" alt="logo"/>
                             <strong className="align-middle">MDB React</strong>
                         </MDBNavbarBrand>
                         <MDBNavbarToggler
